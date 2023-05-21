@@ -6,8 +6,10 @@ The Mark Management Application is a tool designed to keep track of the courses 
 ## Key Features
 The application consists of three main sections: the course administration section, the visualization section, and the status bar.
 
+![Alt Text](init.png)
+
 #### Course Administration
-The course administration section is divided into two parts: adding a course and listing all added courses.        To add a course, the user enters the course code, selects the term in which the course was taken, enters the received grade (within the range [0, ...       , 100] or WD), and clicks a button to create the new course.        The added courses are displayed in a list, allowing the user to edit or delete them.
+The course administration section is divided into two parts: adding a course and listing all added courses. To add a course, the user enters the course code, selects the term in which the course was taken, enters the received grade (within the range [0, ..., 100] or WD), and clicks a button to create the new course. The added courses are displayed in a list, allowing the user to edit or delete them.
 
 #### Status Bar
 The status bar, located at the bottom of the application, provides the following information:
@@ -25,11 +27,20 @@ The visualization section includes four tabs, each presenting a different visual
 
 **Average by Term:** Displays the average grade for each term in a Line & Marker chart. The x-axis represents the terms, ranging from the oldest to the newest, even if no courses were recorded for certain terms. The y-axis ranges from 0 to 100, with gridlines distinguishing each row. A marker indicates the average grade for each term.
 
+![Alt Text](avaTerm.png)
+
 **Progress towards Degree:** Groups all courses into three categories (CS, MATH, and Other) and displays the count of passed courses in each category as a horizontal bar graph. It also shows the remaining number of courses required to complete the degree. The visualization highlights the difference between completed and remaining courses using visual cues.
+
+![Alt Text](progress.png)
 
 **Course Outcomes:** Categorizes courses into different groups based on their outcomes (WD'ed, failed, low, good, great, excellent, and missing) and presents the counts in a pie chart.   Hovering over a segment displays the courses contributing to that category. The pie chart can represent all added courses or all 40 courses required for the degree.
 
+![Alt Text](courseOutcome1.png)
+![Alt Text](courseOutcome2.png)
+
 **Incremental Averages:** Similar to the "Average by Term" visualization, but each column represents the average of all courses taken up to and including that term. Unfilled circles indicate the marks for each course, and error bars represent the corrected standard deviation.
+
+![Alt Text](IncreAva.png)
 
 ## Getting Started
 To set up the Mark Management Application, follow these steps:
